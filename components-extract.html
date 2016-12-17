@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />	  
+<title>Hello World</title>
+<style>
+{
+	body {
+		padding: 5px;
+	}
+}
+</style>  
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<div id="aDiv"></div>
+<div id="userInfoDiv"></div>  
+<script type="text/babel" src="javascript/Comment.js"></script>
+<script type="text/babel" src="javascript/Avatar.js"></script> 
+<script type="text/babel" src="javascript/UserInfo.js"></script> 
+
+
+
+
+
+
+<script type="text/babel">
+
+
+const comment = {
+date: new Date(),
+text: 'I hope you enjoy learning React!',
+author: {
+name: 'Hello Kitty',
+avatarUrl: 'http://placekitten.com/g/64/64'
+}
+};
+
+ReactDOM.render(
+<Comment
+date={comment.date}
+text={comment.text}
+author={comment.author} />,
+document.getElementById('container')
+);
+
+ReactDOM.render(
+<Avatar
+ user={comment.author}  />,
+document.getElementById('aDiv')
+);
+
+ReactDOM.render(
+<UserInfo user={comment.author}/>,
+document.getElementById('userInfoDiv')
+);
+
+</script>
+</body>
+</html>

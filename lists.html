@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />	  
+<title>Hello World</title>
+<style>
+
+	
+	
+	
+</style>  
+
+</head>
+<body>
+<div id="root"></div>
+<div id="tree"></div>
+
+<script src="javascript/Page.js" type="text/babel"></script>
+<script src="javascript/NumberList.js" type="text/babel"></script>	
+
+	
+<script type="text/babel">
+const nums = [1,2,3,4,5];
+const triples = nums.map( (number) => number*3);
+const listItems = nums.map( (number) =>
+							<li>{number}</li>
+                  );
+console.log(triples);
+
+/*
+ReactDOM.render(
+		<ul>{listItems}</ul>,
+  document.getElementById('root')
+);
+*/
+
+
+ReactDOM.render(
+		<NumberList numbers={nums}></NumberList>,
+  document.getElementById('tree')
+);
+</script>
+	
+	
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>	
+</body>
+</html>

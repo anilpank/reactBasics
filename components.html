@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />	  
+    <title>Hello World</title>
+	<style>
+		{
+			body {
+				padding: 5px;
+			}
+		}
+	</style>  
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="js/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script type="text/babel">  
+   
+    function Welcome(props) {
+		return <h1>Hello {props.name}</h1>;
+	}  
+
+
+    class Swagat extends React.Component {
+		render() {
+			return <h1>Hi {this.props.name}</h1>;
+		}
+	}
+
+    const element = <Welcome name='anil'/>;
+
+    ReactDOM.render (
+		element,
+		container
+	);
+
+
+
+    </script>
+  </body>
+</html>

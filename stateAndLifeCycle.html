@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />	  
+<title>Hello World</title>
+<style>
+{
+	body {
+		padding: 5px;
+	}
+}
+</style>  
+
+</head>
+<body>
+<div id="root"></div>
+<div id="tree"></div>
+
+
+
+
+
+
+<script src="javascript/Watch.js" type="text/babel"></script>
+<script src="javascript/FormattedDate.js" type="text/babel"></script>	
+<script type="text/babel">
+
+function WatchApp() {
+	return (
+		<div>
+		<Watch></Watch>
+		<Watch></Watch>
+		<Watch></Watch>
+		</div>	
+	);
+}
+
+ReactDOM.render(
+		<WatchApp></WatchApp>,
+		document.getElementById('root')
+);
+
+</script>
+	
+	
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>	
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />	  
+<title>Hello World</title>
+<style>
+{
+	body {
+		padding: 5px;
+	}
+}
+</style>  
+
+</head>
+<body>
+<div id="root"></div>
+<div id="tree"></div>
+
+<script src="javascript/Mailbox.js" type="text/babel"></script>
+<script type="text/babel">
+
+const messages = ['as', 'sdd'];
+ReactDOM.render(
+		<Mailbox unreadMessages={messages}/>,
+  document.getElementById('root')
+);
+</script>
+	
+	
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>	
+</body>
+</html>
